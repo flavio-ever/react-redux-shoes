@@ -6,11 +6,20 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+
+    // Configuracoes do Prettier p/ React
+    'prettier',
+    'prettier/react'
+
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+
+  // Babel
+  parser: 'babel-eslint',
+
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -20,7 +29,20 @@ module.exports = {
   },
   plugins: [
     'react',
+
+    // Add Plugin Prettier
+    'prettier'
   ],
   rules: {
+    // Apontar todas as regras que não encontrar como um erro
+    'prettier/prettier': 'error',
+    // JSX
+    'react/jsx-filename-extension': [
+      // Warn somente se extencoes não forem jsx quanto js
+      'warn',
+      { extensions : ['.jsx', '.js'] }
+    ],
+    'import/prefer-default-export': 'off',
+    'react/state-in-constructor': 'off',
   },
 };
