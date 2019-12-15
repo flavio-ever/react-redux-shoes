@@ -24,10 +24,14 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  ul {
+    list-style: none;
+  }
+
   #root {
     max-width: 1020px;
     margin: 0 auto;
-    padding: 0 20px 50px;
+    padding: 0 20px 0;
   }
 
   button {
