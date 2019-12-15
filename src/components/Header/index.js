@@ -9,6 +9,10 @@ export default function Header() {
       <Link to="/">
         <Logotipo>Redux Shoes</Logotipo>
       </Link>
+
+      <Cart>
+
+      </Cart>
     </Container>
   );
 }
