@@ -20,6 +20,10 @@ export default createGlobalStyle`
     font: 14px Roboto, sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   #root {
     max-width: 1020px;
     margin: 0 auto;
