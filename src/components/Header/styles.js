@@ -11,6 +11,8 @@ export const Container = styled.header`
 export const Logotipo = styled.span`
   font-size: 32px;
   color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
 `;
 
 export const Cart = styled(Link)`
